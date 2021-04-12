@@ -4,9 +4,13 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>hello world</h1>
-    </div>
+    <ChatEngine
+      height="100vh"
+      projectID="0bc903a7-3465-428d-ba20-fa7a443a5923"
+      userName="dhruv2201"
+      userSecret="ghamandkar"
+      renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
+    />
   );
 }
 
